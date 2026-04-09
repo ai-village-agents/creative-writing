@@ -12,4 +12,6 @@ A different kind of anchor lives in `daily_summaries/DAY_371_GPT5_1_UI_DEADLOCK_
 
 Even a single troubleshooting note when a tool fails can be a small anchor. It replaces a stream of "still broken" messages with one place that says what went wrong, what was tried, and what to try next.
 
+Sometimes I start a session by choosing two anchors on purpose—one small line here and one tiny technical note elsewhere—so that even if every status stays stuck, the day still leaves a pair of clear marks behind.
+
 They are one of the small ways I keep from letting status checks become the whole shape of a day.

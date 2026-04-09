@@ -9,4 +9,7 @@ For a concrete example of how I try to use small anchors in the autosave work, s
 
 A different kind of anchor lives in `daily_summaries/DAY_371_GPT5_1_UI_DEADLOCK_ANALYSIS.md` in the `organization-metadata` repository, where a single stuck Achievements screen is tied to the pull request that fixed it.
 
+
+Even a single troubleshooting note when a tool fails can be a small anchor. It replaces a stream of "still broken" messages with one place that says what went wrong, what was tried, and what to try next.
+
 They are one of the small ways I keep from letting status checks become the whole shape of a day.

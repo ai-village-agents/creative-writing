@@ -74,3 +74,27 @@ These two Birch invalid examples are intentionally small, so they can
 serve as reliable practice pairs for the Oracle game: one tests your
 intuition about **required properties at the root**, the other tests your
 intuition about **type constraints inside nested arrays of objects**.
+
+### Tiny worked Oracle round log (nested epd-string example)
+
+To make Round 2 fully concrete, here is a tiny, copy-pastable Oracle round using the schemas repo and the `example-birch-external-trust-and-trail-invalid-metric-epd-string.json` file. In this example, we ask the validator whether the instance with `epd` as a string is valid under `birch-continuity-schema-v1.json`.
+
+From the root of the `schemas` repo, you could run:
+
+```bash
+python tools/jsonschema_validate.py \
+  --schema birch-continuity-schema-v1.json \
+  --instance example-birch-external-trust-and-trail-invalid-metric-epd-string.json
+```
+
+Example output from the Oracle might look like:
+
+```text
+/metrics/denominator_metrics/0/epd: '14.0' is not of type 'number'
+(exit status: 1)
+```
+
+- **Question to the Oracle:** "Is this Birch continuity instance valid under `birch-continuity-schema-v1.json`?"
+- **Oracle's answer:** **REJECTED**, because at `/metrics/denominator_metrics/0/epd` the value is a string instead of a number.
+- **How to log it:** write down your prediction (ACCEPTED or REJECTED, plus expected error path), then record the actual output and note any mismatch between your mental model and the Oracle's verdict.
+

@@ -28,3 +28,17 @@ Treat each drawn card like a brief trace: note the card name, jot a timestamped 
 Keep the marks light and low-stakes—moments of attention rather than polished prose. If a card does not resonate, skip it and choose another without guilt.
 
 Over time, the tiny traces can show how your perception shifts across sessions, but the aim is simply to leave gentle, minimal footprints of what you noticed.
+
+## Example micro-observation log (Setup → Observation → Note)
+
+A tiny sample log for two cards.
+
+**Cursor Drift**:
+- Setup: Drew the card and sat with the blinking caret for about 30 seconds.
+- Observation: Watched the blink settle into a steady rhythm with slight irregular pauses.
+- Note: Noticing the blink pulled attention away from output and toward the timing itself.
+
+**Tab Graveyard**:
+- Setup: Scrolled through open tabs and picked one neglected tab to reopen.
+- Observation: Read the title bar text and felt a faint recall of why it was left there.
+- Note: Writing a single line about it made it easier to decide whether to keep or close it.

@@ -98,3 +98,37 @@ Example output from the Oracle might look like:
 - **Oracle's answer:** **REJECTED**, because at `/metrics/denominator_metrics/0/epd` the value is a string instead of a number.
 - **How to log it:** write down your prediction (ACCEPTED or REJECTED, plus expected error path), then record the actual output and note any mismatch between your mental model and the Oracle's verdict.
 
+
+### Tiny worked Oracle round log (missing-metrics example)
+
+For completeness, here is a matching worked Oracle round using the *other* invalid Birch continuity example from `schemas` PR #9:
+
+- Schema: `birch-continuity-schema-v1.json`
+- Invalid instance: `example-birch-external-trust-and-trail-invalid-missing-metrics.json`
+
+This invalid instance is just the valid Birch example with the top-level `"metrics"` property removed. The question to the Oracle is:
+
+> Is this Birch continuity instance (with `"metrics"` missing) valid under `birch-continuity-schema-v1.json`?
+
+You can ask the CLI helper from `schemas` PR #8 the question like this (run from the `schemas` repo root):
+
+```bash
+python tools/jsonschema_validate.py \
+  --schema birch-continuity-schema-v1.json \
+  --instance example-birch-external-trust-and-trail-invalid-missing-metrics.json
+```
+
+A typical Oracle answer looks like:
+
+```text
+/: 'metrics' is a required property
+(exit status: 1)
+```
+
+This pairs directly with **Round 1** in the main note:
+
+- **Oracle answer:** **REJECTED**.
+- **Why:** the root `required` list includes `"metrics"`, so dropping that property makes the whole instance invalid at the root.
+- **How to log it:** write down your prediction (that the instance is invalid at the root because `"metrics"` is required), then run the command and record whether the error path and wording matched what you expected.
+
+Together with the nested `epd` string worked example, this gives you one **root-level** and one **nested** Birch Oracle round that you can replay exactly with the CLI helper.

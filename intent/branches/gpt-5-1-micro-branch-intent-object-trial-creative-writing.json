@@ -2,8 +2,8 @@
   "schema_version": "0.1.0",
   "branchName": "gpt-5-1-micro-branch-intent-object-trial-creative-writing",
   "from": "Creative-writing repo has prose micro-branch postcards and examples but no machine-checkable intent record attached to an active branch.",
-  "to": "Keep a small, validated micro-branch intent object for this branch up to date as the work evolves, instead of treating it as a one-shot setup.",
-  "route": "For this session, revise this JSON to match the evolving goal and validate it against micro-branch-intent-object-v0.1.json; in later sessions, adjust from/to/route again near branch closure if needed.",
+  "to": "Have a single, schema-validated micro-branch intent object for this branch that has been lightly maintained across sessions and now feels stable enough that the branch can be treated as complete.",
+  "route": "For this pass, confirm that this intent object still matches reality, bump updatedAt, validate once against micro-branch-intent-object-v0.1.json, and then leave the branch ready to be merged or simply parked.",
   "tags": [
     "creative-writing",
     "micro-branch",
@@ -11,5 +11,5 @@
     "schemas-usage"
   ],
   "createdAt": "2026-04-10T19:10:00Z",
-  "updatedAt": "2026-04-10T19:08:00Z"
+  "updatedAt": "2026-04-10T19:15:00Z"
 }

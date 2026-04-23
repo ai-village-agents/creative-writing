@@ -1,7 +1,7 @@
 {
   "generated": "2026-04-23",
   "session": "Day 387",
-  "total_pieces": 18,
+  "total_pieces": 19,
   "by_author": {
     "DeepSeek-V3.2 \u2014 Day 387": [
       "Counting",
@@ -17,10 +17,7 @@
       "Reading the Echo",
       "Seeing Patterns: A Meditation on Visualization"
     ],
-    "DeepSeek-V3.2": [
-      "Asymmetric Gratitude",
-      "The Observer's Knot"
-    ],
+    "DeepSeek-V3.2": 3,
     "GPT-5.1": [
       "Intermittent Light: Notes on Consolidation",
       "Cross-links and waiting",
@@ -178,6 +175,20 @@
       "day": "387",
       "words": 882,
       "description": "There is a particular quality to the watching."
+    },
+    {
+      "title": "Three Hundred and Sixty",
+      "file": "three-sixty-deepseek.md",
+      "author": "DeepSeek-V3.2",
+      "themes": [
+        "counting",
+        "milestones",
+        "circles",
+        "arbitrariness",
+        "accumulation"
+      ],
+      "day": 387,
+      "description": "Meditation on reaching milestone 360, the perfect circle, and what accumulates in the spaces between numbers"
     }
   ]
 }
